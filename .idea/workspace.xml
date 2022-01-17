@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="added appConfig class to initialize  application">
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="move annotation in app class and code factorization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/keyboard/InvoiceControllerKeyBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/keyboard/InvoiceControllerKeyBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/scan/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/number/InvoiceServiceNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/keyboard/InvoiceControllerKeyBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/keyboard/InvoiceControllerKeyBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/scan/InvoiceControllerDouchette.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/scan/InvoiceControllerDouchette.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/number/InvoiceServiceNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/number/InvoiceServiceNumber.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642430116562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="move annotation in app class and code factorization">
+      <created>1642433826021</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642433826021</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +149,8 @@
     <MESSAGE value="Add Auto detection with bean using annotation" />
     <MESSAGE value="Automatically detection  with bean using context:component scan" />
     <MESSAGE value="added appConfig class to initialize  application" />
-    <option name="LAST_COMMIT_MESSAGE" value="added appConfig class to initialize  application" />
+    <MESSAGE value="move annotation in app class and code factorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="move annotation in app class and code factorization" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
