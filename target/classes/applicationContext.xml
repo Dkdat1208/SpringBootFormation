@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd ">
+
+    <context:annotation-config/>
+
+    <context:property-placeholder location="classpath:application.properties"/>
+
+    <bean id="invoiceService" class="com.mycompany.invoise.service.InvoiceServicePrefix" >
+       <!-- <property name="invoiceRepositoryInterface" ref="invoiceRepository"/> -->
+       <!-- <property name="lastNumber" value="112"/>
+        <property name="prefix" value="INV_"/>-->
+
+    </bean>
+
+    <bean class="com.mycompany.invoise.controller.InvoiceControllerWeb" >
+       <!-- <property name="invoiceServiceInterface" ref="invoiceService"/>-->
+    </bean>
+
+    <bean id="invoiceRepository" class="com.mycompany.invoise.repository.InvoiceRepositoryDatabase"/>
+
+
+
+</beans>
