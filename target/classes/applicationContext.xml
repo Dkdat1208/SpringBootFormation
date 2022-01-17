@@ -9,19 +9,16 @@ http://www.springframework.org/schema/context/spring-context.xsd ">
     <context:annotation-config/>
 
     <context:property-placeholder location="classpath:application.properties"/>
+    <context:component-scan base-package="com.mycompany.invoise"/>
 
-    <bean id="invoiceService" class="com.mycompany.invoise.service.InvoiceServicePrefix" >
-       <!-- <property name="invoiceRepositoryInterface" ref="invoiceRepository"/> -->
-       <!-- <property name="lastNumber" value="112"/>
-        <property name="prefix" value="INV_"/>-->
+    <!-- bean id="invoiceService" class="com.mycompany.invoise.service.InvoiceServicePrefix" >
 
     </bean>
 
     <bean class="com.mycompany.invoise.controller.InvoiceControllerWeb" >
-       <!-- <property name="invoiceServiceInterface" ref="invoiceService"/>-->
     </bean>
 
-    <bean id="invoiceRepository" class="com.mycompany.invoise.repository.InvoiceRepositoryDatabase"/>
+    <bean id="invoiceRepository" class="com.mycompany.invoise.repository.InvoiceRepositoryDatabase"/ -->
 
 
 

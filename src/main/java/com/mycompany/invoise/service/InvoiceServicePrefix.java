@@ -4,9 +4,10 @@ import com.mycompany.invoise.entity.Invoice;
 import com.mycompany.invoise.repository.InvoiceRepositoryInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
-import java.io.File;
 
+@Service
 public class InvoiceServicePrefix implements InvoiceServiceInterface {
 
     @Value("${invoice.lastNumber}")
