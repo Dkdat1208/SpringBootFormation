@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="Add Auto detection with bean using annotation">
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="Automatically detection  with bean using context:component scan">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/InvoiceControllerKeyBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/keyboard/InvoiceControllerKeyBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/number/InvoiceServiceNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/InvoiceControllerDouchette.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/InvoiceControllerKeyBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/InvoiceControllerWeb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/InvoiceRepositoryDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/InvoiceRepositoryMemory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/InvoiceServiceNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/InvoiceServicePrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/App.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642426777270</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Automatically detection  with bean using context:component scan">
+      <created>1642428457086</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642428457086</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,7 +126,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean project" />
     <MESSAGE value="Add Auto detection with bean using annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Auto detection with bean using annotation" />
+    <MESSAGE value="Automatically detection  with bean using context:component scan" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automatically detection  with bean using context:component scan" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
