@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="start with springboot application , remove applicationPropertie file and use SoringBootApplication annotation">
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="Cleaned up pom.xml file and used parent dependency as spring init project">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/InvoiceControllerInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/InvoiceControllerInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/keyboard/InvoiceControllerKeyBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/keyboard/InvoiceControllerKeyBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/scan/InvoiceControllerDouchette.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/scan/InvoiceControllerDouchette.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/web/InvoiceControllerWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/web/InvoiceControllerWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/entity/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/entity/Invoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/InvoiceRepositoryInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/InvoiceRepositoryInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/database/InvoiceRepositoryDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/database/InvoiceRepositoryDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/InvoiceServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/InvoiceServiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/number/InvoiceServiceNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/number/InvoiceServiceNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/prefix/InvoiceServicePrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/prefix/InvoiceServicePrefix.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +33,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,6 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -128,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642436611136</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cleaned up pom.xml file and used parent dependency as spring init project">
+      <created>1642506503110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642506503110</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,7 +172,8 @@
     <MESSAGE value="added appConfig class to initialize  application" />
     <MESSAGE value="move annotation in app class and code factorization" />
     <MESSAGE value="start with springboot application , remove applicationPropertie file and use SoringBootApplication annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="start with springboot application , remove applicationPropertie file and use SoringBootApplication annotation" />
+    <MESSAGE value="Cleaned up pom.xml file and used parent dependency as spring init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up pom.xml file and used parent dependency as spring init project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
