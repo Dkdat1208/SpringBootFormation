@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="using tomcat for web app and spring devtools properties to move static repository to computer folder">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="Using thymeleaf and starting with requestMapping to create the root">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/invoice-home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/web/InvoiceControllerWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/controller/web/InvoiceControllerWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/InvoiceRepositoryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/InvoiceServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/number/InvoiceServiceNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/web/InvoiceControllerWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/controller/web/InvoiceControllerWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/InvoiceRepositoryInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/InvoiceRepositoryInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/database/InvoiceRepositoryDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/database/InvoiceRepositoryDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/repository/memory/InvoiceRepositoryMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/InvoiceServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/InvoiceServiceInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/number/InvoiceServiceNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/number/InvoiceServiceNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/prefix/InvoiceServicePrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/service/prefix/InvoiceServicePrefix.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +64,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.rmicompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -163,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642591276328</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Using thymeleaf and starting with requestMapping to create the root">
+      <created>1642607829087</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642607829087</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +203,8 @@
     <MESSAGE value="Cleaned up pom.xml file and used parent dependency as spring init project" />
     <MESSAGE value="start with springBoot using tomcat server  &amp; change the   server port 8080 to 80 with new path" />
     <MESSAGE value="using tomcat for web app and spring devtools properties to move static repository to computer folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="using tomcat for web app and spring devtools properties to move static repository to computer folder" />
+    <MESSAGE value="Using thymeleaf and starting with requestMapping to create the root" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using thymeleaf and starting with requestMapping to create the root" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
