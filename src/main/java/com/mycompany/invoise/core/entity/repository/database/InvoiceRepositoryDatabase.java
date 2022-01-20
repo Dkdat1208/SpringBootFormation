@@ -5,6 +5,7 @@ import com.mycompany.invoise.core.entity.repository.InvoiceRepositoryInterface;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.concurrent.RecursiveTask;
 
 @Repository
 public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
@@ -25,5 +26,14 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
         invoiceSfr.setCustomerName("SFR");
 
         return List.of(invoiceEdf,invoiceSfr);
+    }
+
+    @Override
+    public Invoice getById(String number) {
+        Invoice invoiceEdf =  new Invoice();
+        invoiceEdf.setNumber(number);
+        invoiceEdf.setCustomerName("EDF");
+        invoiceEdf.setOrderNumber("ON_002");
+        return  invoiceEdf ;
     }
 }
