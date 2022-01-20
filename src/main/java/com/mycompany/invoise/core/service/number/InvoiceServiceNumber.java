@@ -1,0 +1,33 @@
+package com.mycompany.invoise.core.service.number;
+
+import com.mycompany.invoise.core.entity.Invoice;
+import com.mycompany.invoise.core.entity.repository.InvoiceRepositoryInterface;
+import com.mycompany.invoise.core.service.InvoiceServiceInterface;
+
+import java.util.List;
+
+//@Service
+public class InvoiceServiceNumber implements InvoiceServiceInterface {
+
+    private static long lastNumber = 0L;
+    private InvoiceRepositoryInterface invoiceRepositoryInterface ;
+
+    public InvoiceRepositoryInterface getInvoiceRepositoryInterface() {
+        return invoiceRepositoryInterface;
+    }
+
+    public void setInvoiceRepositoryInterface(InvoiceRepositoryInterface invoiceRepositoryInterface) {
+        this.invoiceRepositoryInterface = invoiceRepositoryInterface;
+    }
+
+    public void  createInvoice(Invoice invoice){
+
+       invoice.setNumber(String.valueOf(++lastNumber));
+       invoiceRepositoryInterface.create(invoice);
+    }
+
+    @Override
+    public List<Invoice> getInvoiceList() {
+        return invoiceRepositoryInterface.list();
+    }
+}
