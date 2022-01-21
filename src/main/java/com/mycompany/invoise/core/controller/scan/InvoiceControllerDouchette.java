@@ -8,21 +8,19 @@ import com.mycompany.invoise.core.service.InvoiceServiceInterface;
 public class InvoiceControllerDouchette implements InvoiceControllerInterface {
 
     private InvoiceServiceInterface invoiceServiceInterface;
-
     public InvoiceServiceInterface getInvoiceServiceInterface() {
         return invoiceServiceInterface;
     }
-
     public void setInvoiceServiceInterface(InvoiceServiceInterface invoiceServiceInterface) {
         this.invoiceServiceInterface = invoiceServiceInterface;
     }
 
-
     @Override
-    public void createInvoice() {
+    public String  createInvoice(Invoice invoice) {
         System.out.println("Usage of a scanner");
-        Invoice invoice = new Invoice();
+         invoice = new Invoice();
         invoice.setCustomerName("Virgin Galactic");
         invoiceServiceInterface.createInvoice(invoice);
+        return  null ;
     }
 }
