@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="add invoice web page view and detail-invoice page view">
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="added an invoice creation form, an invoice creation form and methods that implement these forms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/InvoiceControllerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/InvoiceControllerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Invoice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +60,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/../invoise-web/src/main/java/com/mycompany/invoise/invoiseweb" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../invoise-web/src/main/resources/templates" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -86,6 +84,7 @@
       <recent name="com.mycompany.invoise.invoiseweb" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mycompany.invoise.invoiseweb.form" />
       <recent name="com.mycompany.invoise" />
       <recent name="com.mycompany.invoise.repository" />
       <recent name="com.mycompany.invoise.service" />
@@ -238,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642702173203</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added an invoice creation form, an invoice creation form and methods that implement these forms">
+      <created>1642770480490</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1642770480490</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +272,8 @@
     <MESSAGE value="add list of invoices" />
     <MESSAGE value="Creating core library" />
     <MESSAGE value="add invoice web page view and detail-invoice page view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add invoice web page view and detail-invoice page view" />
+    <MESSAGE value="added an invoice creation form, an invoice creation form and methods that implement these forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="added an invoice creation form, an invoice creation form and methods that implement these forms" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -2,7 +2,9 @@ package com.mycompany.invoise.core.entity;
 
 public class Invoice {
     private String number;
+  //  @NotBlank
     private String  customerName;
+   // @Size(min=10, max=13)
     private String orderNumber;
 
     public String getOrderNumber() {
