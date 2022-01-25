@@ -47,10 +47,12 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
         this.invoiceRepositoryInterface = invoiceRepositoryInterface;
     }
 
-    public void  createInvoice(Invoice invoice){
+    public Invoice  createInvoice(Invoice invoice){
 
        invoice.setNumber(prefix + (++lastNumber));
        invoiceRepositoryInterface.create(invoice);
+
+       return invoice;
     }
 
     @Override

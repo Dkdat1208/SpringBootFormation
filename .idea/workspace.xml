@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="clean project" />
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="clean project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/InvoiceServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/Invoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/database/InvoiceRepositoryDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/database/InvoiceRepositoryDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/InvoiceServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/InvoiceServiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../invoise-web/src/main/java/com/mycompany/invoise/invoiseweb" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../invoise-web/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../invoise-web/src/main/resources/static/js/css" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,6 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaSpring Formation\invoise-web\src\main\resources\static\js\css" />
       <recent name="D:\JavaSpring Formation\invoise-web\src\main\resources" />
       <recent name="D:\JavaSpring Formation\invoise-web\src\main\resources\templates" />
       <recent name="D:\JavaSpring Formation\invoise\src\main\resources" />
@@ -82,6 +95,7 @@
       <recent name="com.mycompany.invoise.invoiseweb" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mycompany.invoise.invoiseweb.api" />
       <recent name="com.mycompany.invoise.invoiseweb.form" />
       <recent name="com.mycompany.invoise" />
       <recent name="com.mycompany.invoise.repository" />
