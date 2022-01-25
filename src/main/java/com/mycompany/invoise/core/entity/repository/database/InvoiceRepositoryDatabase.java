@@ -5,7 +5,6 @@ import com.mycompany.invoise.core.entity.repository.InvoiceRepositoryInterface;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.concurrent.RecursiveTask;
 
 @Repository
 public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
