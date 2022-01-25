@@ -1,6 +1,5 @@
-package com.mycompany.invoise.invoiseweb.controller;
+package com.mycompany.invoise.invoiseweb.api;
 
-import com.mycompany.invoise.core.controller.InvoiceControllerInterface;
 import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.service.InvoiceServiceInterface;
 import com.mycompany.invoise.invoiseweb.form.InvoiceForm;
@@ -9,15 +8,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 import java.util.List;
 
 
-@Controller
+@RestController
 @RequestMapping("/invoice")
-public class InvoiceControllerWeb  {
+public class InvoiceResource {
     @Autowired
     private InvoiceServiceInterface invoiceServiceInterface ;
     public InvoiceServiceInterface getInvoiceServiceInterface() {
@@ -26,24 +24,15 @@ public class InvoiceControllerWeb  {
     public void setInvoiceServiceInterface(InvoiceServiceInterface invoiceServiceInterface) {
         this.invoiceServiceInterface = invoiceServiceInterface;
     }
-
-@PostMapping("/create")
-    public String createInvoice(@Valid @ModelAttribute InvoiceForm invoiceForm, BindingResult results){
-       if(results.hasErrors()){
-           return  "invoice-create-form";
-       }
-        Invoice invoice =  new Invoice();
-        invoice.setCustomerName(invoiceForm.getCustomerName());
-        invoice.setOrderNumber(invoiceForm.getOrderNumber());
-        invoiceServiceInterface.createInvoice(invoice);
-        return "invoice-created" ;
+@PostMapping
+    public Invoice create(@RequestBody Invoice invoice){
+        return  invoiceServiceInterface.createInvoice(invoice);
     }
 
-    @GetMapping("/home")
-    public  String  displayHome(Model model){
+    @GetMapping
+    public List<Invoice> list(Model model){
         System.out.println("la methode display Home a été invoquée");
-        model.addAttribute("invoices", invoiceServiceInterface.getInvoiceList());
-        return "invoice-home";
+        return  invoiceServiceInterface.getInvoiceList();
     }
 
 //    public  ModelAndView  displayHome(){
@@ -53,15 +42,15 @@ public class InvoiceControllerWeb  {
 //        return modelAndView;
 //    }
 
-  /*  @GetMapping("/{id}")
-    public String  displayInvoice(@PathVariable("id") String number, Model model){
+    @GetMapping("/{id}")
+    public  Invoice  get(@PathVariable("id") String number){
         System.out.println("la methode displayInvoice  a été invoquée");
-        model.addAttribute("invoice", invoiceServiceInterface.getInvoiceByNumber(number));
-        return "invoice-details";
-    }*/
+        return  invoiceServiceInterface.getInvoiceByNumber(number);
+    }
 
+    /*
     @GetMapping("/create-form")
     public String displayInvoiceCreateForm(@ModelAttribute  InvoiceForm invoice){
         return "invoice-create-form";
-    }
+    }*/
 }
