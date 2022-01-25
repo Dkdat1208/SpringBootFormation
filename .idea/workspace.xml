@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="Addition of the ValidationMessage-fr file for the management of errors related to the form and display of errors in the Web page with thymeleaf">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="clean project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643045986290</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="clean project">
+      <created>1643095558823</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643095558823</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +278,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="clean project" />
     <MESSAGE value="Add Auto detection with bean using annotation" />
     <MESSAGE value="Automatically detection  with bean using context:component scan" />
     <MESSAGE value="added appConfig class to initialize  application" />
@@ -289,7 +293,8 @@
     <MESSAGE value="added an invoice creation form, an invoice creation form and methods that implement these forms" />
     <MESSAGE value="added validation forms with starter-validation dependency" />
     <MESSAGE value="Addition of the ValidationMessage-fr file for the management of errors related to the form and display of errors in the Web page with thymeleaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Addition of the ValidationMessage-fr file for the management of errors related to the form and display of errors in the Web page with thymeleaf" />
+    <MESSAGE value="clean project" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
