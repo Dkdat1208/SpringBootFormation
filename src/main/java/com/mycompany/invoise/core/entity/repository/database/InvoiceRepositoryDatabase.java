@@ -2,12 +2,17 @@ package com.mycompany.invoise.core.entity.repository.database;
 
 import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.entity.repository.InvoiceRepositoryInterface;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
 public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
 
     public void create(Invoice invoice){
         System.out.println("Database : Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
@@ -16,17 +21,9 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
 
     @Override
     public List<Invoice> list() {
-        Invoice invoiceEdf =  new Invoice();
-        invoiceEdf.setNumber("NUM_1");
-        invoiceEdf.setCustomerName("EDF");
-
-        Invoice invoiceSfr =  new Invoice();
-        invoiceSfr.setNumber("NUM_2");
-        invoiceSfr.setCustomerName("SFR");
-
-        return List.of(invoiceEdf,invoiceSfr);
+     return  jdbcTemplate.query("SELECT  INVOICE_NUMBER, CUSTOMER_NAME FROM INVOICE",
+             (rs, rowNum) -> new Invoice(String.valueOf( rs .getLong("INVOICE_NUMBER")) ,rs.getString("CUSTOMER_NAME")));
     }
-
     @Override
     public Invoice getById(String number) {
         Invoice invoiceEdf =  new Invoice();
