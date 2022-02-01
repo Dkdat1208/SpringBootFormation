@@ -19,20 +19,20 @@ public class InvoiceServiceNumber implements InvoiceServiceInterface {
     }
 
     @Override
-    public List<Invoice> getInvoiceList() {
-        return invoiceRepositoryInterface.list();
+    public Iterable<Invoice> getInvoiceList() {
+        return invoiceRepositoryInterface.findAll();
     }
 
     @Override
     public Invoice getInvoiceByNumber(String number) {
-        return invoiceRepositoryInterface.getById(number);
+        return invoiceRepositoryInterface.findById(number).orElseThrow();
     }
     public void setInvoiceRepositoryInterface(InvoiceRepositoryInterface invoiceRepositoryInterface) {
         this.invoiceRepositoryInterface = invoiceRepositoryInterface;
     }
 
     public Invoice  createInvoice(Invoice invoice){
-        return invoiceRepositoryInterface.create(invoice);
+        return invoiceRepositoryInterface.save(invoice);
     }
 
 }

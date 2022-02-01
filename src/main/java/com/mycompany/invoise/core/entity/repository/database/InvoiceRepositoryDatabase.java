@@ -1,4 +1,4 @@
-package com.mycompany.invoise.core.entity.repository.database;
+/*package com.mycompany.invoise.core.entity.repository.database;
 
 import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.entity.repository.InvoiceRepositoryInterface;
@@ -43,7 +43,6 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
     public Invoice getById(String number) {
         String sql= "SELECT  INVOICE_NUMBER, CUSTOMER_NAME, ORDER_NUMBER  FROM INVOICE WHERE INVOICE_ NUMBER=";
        return  jdbcTemplate.queryForObject( sql,
-
                new Object []{number},
                (rs, rowNum) -> new Invoice(String.valueOf( rs .getLong("INVOICE_NUMBER")) ,
                        rs.getString("CUSTOMER_NAME"), rs.getString("ORDER_NUMBER")  ) );
@@ -51,3 +50,4 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
 
 
 }
+*/
