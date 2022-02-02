@@ -4,33 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="using  native crud repository for database operations">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/InvoiceLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Product.java" afterDir="false" />
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="using Hibernate and database  to store database , fetch repository with entityGraph">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/CustomerRepositoryInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/InvoiceRepositoryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/InvoiceServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/InvoiceRepositoryInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/memory/InvoiceRepositoryMemory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/InvoiceServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/InvoiceServiceInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,11 +109,11 @@
       <recent name="com.mycompany.invoise.invoiseweb" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mycompany.invoise.core.repository" />
       <recent name="com.mycompany.invoise.invoiseweb.api" />
       <recent name="com.mycompany.invoise.invoiseweb.form" />
       <recent name="com.mycompany.invoise" />
       <recent name="com.mycompany.invoise.repository" />
-      <recent name="com.mycompany.invoise.service" />
     </key>
   </component>
   <component name="RunManager" selected="Application.InvoiseWebApplication">
@@ -340,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643710330960</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="using Hibernate and database  to store database , fetch repository with entityGraph">
+      <created>1643832270194</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1643832270194</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,7 +361,8 @@
     <MESSAGE value="added mysql database between back and front" />
     <MESSAGE value="added create operation with forms" />
     <MESSAGE value="using  native crud repository for database operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="using  native crud repository for database operations" />
+    <MESSAGE value="using Hibernate and database  to store database , fetch repository with entityGraph" />
+    <option name="LAST_COMMIT_MESSAGE" value="using Hibernate and database  to store database , fetch repository with entityGraph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

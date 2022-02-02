@@ -8,5 +8,6 @@ public interface InvoiceServiceInterface {
   Invoice  createInvoice(Invoice invoice);
   Iterable<Invoice> getInvoiceList();
   Invoice getInvoiceByNumber(String number);
-  void setInvoiceRepositoryInterface(InvoiceRepositoryInterface invoiceRepositoryInterface);
+  void setInvoiceRepositoryInterface(
+          InvoiceRepositoryInterface invoiceRepositoryInterface);
 }
