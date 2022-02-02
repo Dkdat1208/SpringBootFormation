@@ -1,9 +1,10 @@
 package com.mycompany.invoise;
 
+import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
+import org.springframework.context.annotation.Bean;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -14,7 +15,10 @@ import java.sql.SQLException;
 public class InvoiseWebApplication {
 
 	public static void main(String[] args) {
-    	ApplicationContext  context =  SpringApplication.run(InvoiseWebApplication.class, args);
+
+		SpringApplication.run(InvoiseWebApplication.class,args);
+/*
+    ApplicationContext context =  SpringApplication.run(InvoiseWebApplication.class, args);
 		DataSource ds = context.getBean(DataSource.class);
 		Connection connection = null ;
 		try {
@@ -36,9 +40,12 @@ public class InvoiseWebApplication {
 			}catch(SQLException e){
 				e.printStackTrace();
 			}
-		}
+		}*/
+	}
 
-
+	@Bean
+	public Hibernate5Module datatypeHibernateModule(){
+		return  new Hibernate5Module();
 	}
 
 }
