@@ -1,7 +1,7 @@
-package com.mycompany.invoise.core.entity.repository.memory;
+package com.mycompany.invoise.core.repository.memory;
 
 import com.mycompany.invoise.core.entity.Invoice;
-import com.mycompany.invoise.core.entity.repository.InvoiceRepositoryInterface;
+import com.mycompany.invoise.core.repository.InvoiceRepositoryInterface;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +13,8 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
 
     public Invoice save(Invoice invoice){
         invoices.add(invoice);
-        System.out.println("Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
+        System.out.println("Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomer().getName());
         return  invoice;
-
     }
 
     @Override
@@ -44,6 +43,7 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
         throw  new UnsupportedOperationException();
 
     }
+
 
     @Override
     public void deleteAll(Iterable<? extends Invoice> iterable) {

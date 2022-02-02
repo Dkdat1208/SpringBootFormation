@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="36f56e38-fbe5-4fd1-bedd-783220af85aa" name="invoise" url="jdbc:mysql://localhost:3306/invoise?useSSL=false" driverClass="com.mysql.cj.jdbc.Driver" />
+    </data-sources>
+  </component>
+</project>

@@ -1,6 +1,7 @@
 package com.mycompany.invoise.core.controller.keyboard;
 
 import com.mycompany.invoise.core.controller.InvoiceControllerInterface;
+import com.mycompany.invoise.core.entity.Customer;
 import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.service.InvoiceServiceInterface;
 
@@ -25,7 +26,8 @@ public class InvoiceControllerKeyBoard implements InvoiceControllerInterface {
         Scanner sc  = new Scanner(System.in);
         String customerName =  sc.nextLine();
          invoice =  new Invoice();
-        invoice.setCustomerName(customerName);
+        Customer customer = new Customer(customerName);
+        invoice.setCustomer(customer);
         invoiceServiceInterface.createInvoice(invoice);
 
         return  null ;

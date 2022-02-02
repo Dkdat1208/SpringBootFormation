@@ -4,18 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="added create operation with forms">
+    <list default="true" id="1ecd0f20-dac5-46fa-a4c5-a8c72b866e6e" name="Changes" comment="using  native crud repository for database operations">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/InvoiceLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/InvoiceRepositoryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/InvoiceRepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/InvoiceRepositoryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/database/InvoiceRepositoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/database/InvoiceRepositoryDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/entity/repository/memory/InvoiceRepositoryMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/repository/memory/InvoiceRepositoryMemory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/InvoiceServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/InvoiceServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/InvoiceRepositoryInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/InvoiceRepositoryInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/memory/InvoiceRepositoryMemory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/memory/InvoiceRepositoryMemory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/keyboard/InvoiceControllerKeyBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/controller/scan/InvoiceControllerDouchette.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/Invoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/InvoiceRepositoryInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/entity/repository/memory/InvoiceRepositoryMemory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/InvoiceServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/InvoiceServiceInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/number/InvoiceServiceNumber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/invoise/core/service/prefix/InvoiceServicePrefix.class" afterDir="false" />
     </list>
@@ -47,6 +60,22 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -56,6 +85,9 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="23YSfoEMpVkjMkCJNTr1XkooXMj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -71,21 +103,22 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../invoise-web/src/main/java/com/mycompany/invoise/invoiseweb" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../invoise-web/src/main/resources/static/js/css" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../invoise-web/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.com.haulmont.jpb.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaSpring Formation\invoise-web\src\main\resources\static\js\css" />
       <recent name="D:\JavaSpring Formation\invoise-web\src\main\resources" />
+      <recent name="D:\JavaSpring Formation\invoise\src\main\java\com\mycompany\invoise\core\entity" />
+      <recent name="D:\JavaSpring Formation\invoise-web\src\main\resources\static\js\css" />
       <recent name="D:\JavaSpring Formation\invoise-web\src\main\resources\templates" />
       <recent name="D:\JavaSpring Formation\invoise\src\main\resources" />
-      <recent name="D:\JavaSpring Formation\invoise\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaSpring Formation\invoise-web\src\main\resources\templates" />
@@ -300,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643639239901</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="using  native crud repository for database operations">
+      <created>1643710330960</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1643710330960</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,7 +374,18 @@
     <MESSAGE value="Added REST API using SpringBoot annotation" />
     <MESSAGE value="added mysql database between back and front" />
     <MESSAGE value="added create operation with forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="added create operation with forms" />
+    <MESSAGE value="using  native crud repository for database operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="using  native crud repository for database operations" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
